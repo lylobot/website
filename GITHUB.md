@@ -147,19 +147,14 @@ Eso significa que el hosting debe tener acceso persistente al sistema de archivo
 
 ## .gitignore recomendado
 
-Crea un `.gitignore` con esto:
-
 ```gitignore
 node_modules
 .env
 .DS_Store
 npm-debug.log*
-.data
 ```
 
 ## GitHub
-
-1. Inicializa el repositorio:
 
 ```bash
 git init
@@ -169,12 +164,6 @@ git branch -M main
 git remote add origin <URL_DE_GITHUB>
 git push -u origin main
 ```
-
-2. Sube a GitHub normalmente desde GitHub Desktop o la terminal.
-
-## Licencia
-
-Este proyecto se usa sin licencia explícita en este repositorio.
 
 ## Nota final
 
