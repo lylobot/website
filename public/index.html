@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lylo | Tu bot de Discord</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Lylo inicio"><img class="brand-mark" src="/bot-image.png" alt="Lylo"><span>lylo</span></a>
+    <nav class="nav-actions">
+      <a class="nav-link panel-link hidden" href="/admin.html" data-panel>Panel</a>
+      <div class="language-switcher" aria-label="Seleccionar idioma">
+        <button class="flag-button active" data-language="es" title="Español" aria-label="Español">🇪🇸</button>
+        <button class="flag-button" data-language="en" title="English" aria-label="English">🇺🇸</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-i18n="eyebrow">BOT DE DISCORD • HECHO PARA COMUNIDADES</p>
+        <h1 data-i18n="heroTitle">Tu servidor,<br><em>más vivo.</em></h1>
+        <p class="hero-description" data-i18n="heroDescription">Lylo reúne herramientas útiles, automatizaciones sencillas y una experiencia que se siente parte de tu comunidad.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://discord.com/oauth2/authorize?client_id=1550251663259082784&permissions=8&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noreferrer" data-i18n="addBot">Añadir bot</a>
+          <a class="button button-light auth-button" href="/auth/discord" data-i18n="linkAccount">Vincular cuenta</a>
+          <a class="button button-light logout-button hidden" href="/logout" data-i18n="logout">Cerrar sesión</a>
+        </div>
+        <p class="auth-error hidden" data-auth-error></p>
+      </div>
+      <div class="hero-art reveal-delay" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="bot-card"><img class="bot-avatar" src="/bot-image.png" alt="Lylo"><strong>Lylo</strong><span data-i18n="online">● online</span></div>
+        <div class="signal signal-one">/</div><div class="signal signal-two">+</div><div class="signal signal-three">✦</div>
+      </div>
+    </section>
+
+    <section class="feature-band">
+      <div class="section-heading"><p class="eyebrow" data-i18n="whyEyebrow">TODO EN UN SOLO LUGAR</p><h2 data-i18n="whyTitle">Una base sólida<br>para tu comunidad.</h2></div>
+      <div class="features">
+        <article class="feature"><span class="feature-number">01</span><h3 data-i18n="featureOneTitle">Automatiza</h3><p data-i18n="featureOneText">Deja que Lylo se ocupe de las tareas repetitivas para que tu comunidad avance.</p></article>
+        <article class="feature"><span class="feature-number">02</span><h3 data-i18n="featureTwoTitle">Conecta</h3><p data-i18n="featureTwoText">Una cuenta, una vista clara de todos los servidores donde vive tu bot.</p></article>
+        <article class="feature"><span class="feature-number">03</span><h3 data-i18n="featureThreeTitle">Crece</h3><p data-i18n="featureThreeText">Nuevas herramientas llegarán para darte más control y mejores momentos.</p></article>
+      </div>
+    </section>
+    <section class="commands-band"><div class="section-heading"><p class="eyebrow">LYLO / COMANDOS</p><h2>Todo lo que<br><em>puede hacer.</em></h2></div><div class="command-list"><article><code>/kiss @usuario</code><p>Besa a otro usuario y permite responder con una cachetada.</p></article><article><code>/server-info</code><p>Consulta la información, roles y fecha de creación del servidor.</p></article><article><code>/bot-info</code><p>Conoce Lylo, sus enlaces y el servidor de soporte.</p></article><article><code>/ticketpanel</code><p>Publica el panel de tickets configurado para tu comunidad.</p></article><article><code>!honeypot</code><p>Protege un canal trampa contra cuentas que escriban en él.</p></article><article><code>/help</code><p>Abre la ayuda privada con todos los comandos disponibles.</p></article></div></section>
+  </main>
+
+  <footer class="site-footer"><span>© 2026 Lylo</span><div><a href="https://lylobot.github.io/terms-of-service" target="_blank" rel="noreferrer" data-i18n="terms">Terms</a><a href="https://lylobot.github.io/privacy-policy" target="_blank" rel="noreferrer" data-i18n="privacy">Privacy</a></div></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
