@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es-ES">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lylo | Control</title><link rel="stylesheet" href="/styles.css"></head>
+<body class="dashboard-page control-page">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Lylo inicio"><img class="brand-mark" src="/bot-image.png" alt="Lylo"><span>lylo control</span></a>
+    <nav class="nav-actions"><a class="nav-link" href="/" data-i18n="home">Inicio</a><div class="language-switcher" aria-label="Seleccionar idioma"><button class="flag-button active" data-language="es" title="Español">🇪🇸</button><button class="flag-button" data-language="en-US" title="English (US)">🇺🇸</button></div></nav>
+  </header>
+  <main class="control-shell">
+    <section class="control-lock" data-lock>
+      <div class="control-lock-art"><span class="control-lock-icon"><img src="/bot-image.png" alt="Lylo"></span><span class="control-orbit control-orbit-one"></span><span class="control-orbit control-orbit-two"></span></div>
+      <div class="control-lock-copy"><p class="eyebrow" data-i18n="eyebrow">LYLO / CONTROL PRIVADO</p><h1 data-i18n="loginTitle">Centro de control.</h1><p data-i18n="loginText">Administra usuarios vinculados y servidores desde un solo lugar.</p></div>
+      <form data-login><label for="admin-password" data-i18n="passwordLabel">Contraseña de administración</label><div class="control-login-row"><input id="admin-password" type="password" name="password" autocomplete="current-password" placeholder="Contraseña" data-i18n-placeholder="passwordPlaceholder" required><button class="button button-primary" data-i18n="loginButton">Entrar</button></div><span class="form-status" data-login-status role="alert"></span></form>
+    </section>
+    <section class="control-content hidden" data-content>
+      <div class="control-heading"><div><p class="eyebrow" data-i18n="eyebrow">LYLO / CONTROL PRIVADO</p><h1 data-i18n="dashboardTitle">Administración.</h1><p class="control-lead" data-i18n="dashboardText">Supervisa la actividad de Lylo y gestiona el acceso de tus comunidades.</p></div><span class="preview-pill" data-i18n="private">PRIVADO</span></div>
+      <div class="control-overview"><div><span class="overview-label" data-i18n="overviewLabel">RESUMEN</span><strong data-overview-title>Usuarios vinculados</strong><small data-overview-count></small></div><span class="overview-mark"><img src="/bot-image.png" alt="Lylo"></span></div>
+      <div class="control-tabs" role="tablist"><button class="button button-primary" data-view="users" role="tab" data-i18n="usersTab">Usuarios vinculados</button><button class="button button-light" data-view="servers" role="tab" data-i18n="serversTab">Lylo en servidores</button></div>
+      <div class="control-list" data-list></div>
+    </section>
+  </main>
+  <script src="/control.js"></script>
+</body>
+</html>
