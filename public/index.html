@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lylo | Tu bot de Discord</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="control-corner" href="/control.html" aria-label="Control"></a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Lylo inicio"><img class="brand-mark" src="/bot-image.png" alt="Lylo"><span>lylo</span></a>
+    <nav class="nav-actions">
+      <span class="connected-chip hidden" data-connected>Cuenta vinculada</span>
+      <a class="nav-link panel-link hidden" href="/admin.html" data-panel>Panel</a>
+      <div class="language-switcher" aria-label="Seleccionar idioma">
+        <button class="flag-button active" data-language="es" title="Español" aria-label="Español">🇪🇸</button>
+        <button class="flag-button" data-language="en-US" title="English (US)" aria-label="English (US)">🇺🇸</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-i18n="eyebrow">BOT DE DISCORD • HECHO PARA COMUNIDADES</p>
+        <h1 data-i18n="heroTitle">Tu servidor,<br><em>más vivo.</em></h1>
+        <p class="hero-description" data-i18n="heroDescription">Lylo combina automatización, control y atención al usuario para que cada comunidad se sienta más ordenada, más activa y más segura. Diseñado para servidores que quieren crecer sin perder claridad ni tiempo.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://discord.com/oauth2/authorize?client_id=1550251663259082784&permissions=8&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noreferrer" data-i18n="addBot">Añadir bot</a>
+          <a class="button button-light auth-button" href="/auth/discord" data-i18n="linkAccount">Vincular cuenta</a>
+          <a class="button button-light logout-button hidden" href="/logout" data-i18n="logout">Cerrar sesión</a>
+        </div>
+        <p class="auth-error hidden" data-auth-error></p>
+      </div>
+      <div class="hero-art reveal-delay" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="bot-card"><img class="bot-avatar" src="/bot-image.png" alt="Lylo"><strong>Lylo</strong><span data-i18n="online">● online</span></div>
+        <div class="signal signal-one">/</div><div class="signal signal-two">+</div><div class="signal signal-three">✦</div>
+      </div>
+    </section>
+
+    <section class="feature-band">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="whyEyebrow">TODO EN UN SOLO LUGAR</p>
+        <h2 data-i18n="whyTitle">Una base sólida<br>para tu comunidad.</h2>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <span class="feature-number">01</span>
+          <h3 data-i18n="featureOneTitle">Automatiza</h3>
+          <p data-i18n="featureOneText">Reduce tareas repetitivas como avisos, cierres, moderación y organización del soporte. Lylo trabaja en segundo plano para que tu comunidad avance con menos fricción.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-number">02</span>
+          <h3 data-i18n="featureTwoTitle">Conecta</h3>
+          <p data-i18n="featureTwoText">Todo queda centrado en una sola experiencia: dashboard, gestión de servidores, panel de soporte y control de configuración sin perder el contexto.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-number">03</span>
+          <h3 data-i18n="featureThreeTitle">Crece</h3>
+          <p data-i18n="featureThreeText">Diseñado para comunidades activas que necesitan orden, seguridad y estructura para escalar sin complicaciones ni pérdidas de tiempo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="commands-band">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="commandsEyebrow">LYLO / COMANDOS</p>
+        <h2 data-i18n="commandsTitle">Herramientas pensadas<br><em>para administrar mejor.</em></h2>
+      </div>
+      <div class="command-list">
+        <article><code>/kiss @usuario</code><p data-i18n="commandKiss">Un toque más casual para dar vida al chat y generar interacciones amenas dentro de la comunidad.</p></article>
+        <article><code>/server-info</code><p data-i18n="commandServer">Consulta los datos clave del servidor, roles y estructura para mantener todo ordenado y visible.</p></article>
+        <article><code>/bot-info</code><p data-i18n="commandBot">Información útil, enlaces y acceso al soporte para que los usuarios puedan entender mejor el bot.</p></article>
+        <article><code>/ticketpanel</code><p data-i18n="commandTicket">Publica paneles de support con configuraciones rápidas para notificar, atender y gestionar tickets.</p></article>
+        <article><code>!honeypot</code><p data-i18n="commandHoneypot">Protección para canales trampa y detección de actividad sospechosa sin sobrecargar la experiencia del server.</p></article>
+        <article><code>/help</code><p data-i18n="commandHelp">Acceso rápido a las funcionalidades principales del bot para usuarios y administradores.</p></article>
+      </div>
+    </section>
+
+    <section class="feature-band">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="securityEyebrow">LYLO / SEGURIDAD</p>
+        <h2 data-i18n="securityTitle">Protección, control y<br>tranquilidad para tu comunidad.</h2>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <span class="feature-number">04</span>
+          <h3 data-i18n="securityOneTitle">Moderación inteligente</h3>
+          <p data-i18n="securityOneText">Monitorea actividad sospechosa y responde con herramientas útiles para mantener el orden sin caer en procesos manuales complejos.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-number">05</span>
+          <h3 data-i18n="securityTwoTitle">Soporte estructurado</h3>
+          <p data-i18n="securityTwoText">Creación de tickets, canales de atención y mensajes limpios para brindar una experiencia más clara para usuarios y staff.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-number">06</span>
+          <h3 data-i18n="securityThreeTitle">Configuración centralizada</h3>
+          <p data-i18n="securityThreeText">Desde el dashboard puedes ajustar roles, canales, paneles y funciones clave sin depender de procesos manuales largos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats-band">
+      <div class="stat-item">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label" data-i18n="statTracking">Seguimiento de comunidad</span>
+      </div>
+    </section>
+
+    <section class="info-band">
+      <div class="info-copy">
+        <p class="eyebrow" data-i18n="experienceEyebrow">LYLO / EXPERIENCIA</p>
+        <h2 data-i18n="experienceTitle">La herramienta que hace que tu servidor se sienta más profesional.</h2>
+      </div>
+      <div class="info-grid">
+        <article>
+          <h3 data-i18n="experienceOneTitle">Gestión rápida</h3>
+          <p data-i18n="experienceOneText">Configura roles, canales y paneles sin perder tiempo ni depender de procesos complejos o manuales.</p>
+        </article>
+        <article>
+          <h3 data-i18n="experienceTwoTitle">Comunidad más activa</h3>
+          <p data-i18n="experienceTwoText">Ayuda a que cada miembro sienta que el servidor está cuidado, ordenado y preparado para crecer.</p>
+        </article>
+        <article>
+          <h3 data-i18n="experienceThreeTitle">Soporte real</h3>
+          <p data-i18n="experienceThreeText">Organiza dudas, consultas y atención del staff en un flujo más claro para mejorar la experiencia general.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>© 2026 Lylo</span><div><a href="https://lylobot.github.io/terms-of-service" target="_blank" rel="noreferrer" data-i18n="terms">Terms</a><a href="https://lylobot.github.io/privacy-policy" target="_blank" rel="noreferrer" data-i18n="privacy">Privacy</a></div></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
