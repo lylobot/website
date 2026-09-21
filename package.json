@@ -1,0 +1,15 @@
+{
+  "name": "lylo-bot-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lylo Discord bot website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "bot": "node bot.js"
+  },
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "discord.js": "^14.22.1"
+  }
+}
