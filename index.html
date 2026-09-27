@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lylo, un bot de Discord claro, útil y hecho para tu comunidad.">
+  <title data-i18n="titleHome">Lylo | Discord bot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Lylo home">
+      <img class="brand-mark" src="BOTIMAGEN.png" alt="Lylo logo">
+      <span>Lylo</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal" data-i18n-aria-label="mainNavigationAria">
+      <a href="premium.html" class="nav-cta" data-i18n="navPremium">Premium✦</a>
+    </nav>
+    <div class="header-actions">
+      <div class="account-menu" data-account-menu>
+        <a class="login-button" href="http://localhost:3000/auth/login" data-login-link data-i18n="login">Iniciar sesión</a>
+        <button class="account-toggle" type="button" aria-expanded="false" aria-controls="account-dropdown" hidden>
+          <img class="account-avatar" data-account-avatar alt="">
+          <span class="account-chevron">⌄</span>
+        </button>
+        <div class="account-dropdown" id="account-dropdown" role="menu" hidden>
+          <div class="account-summary"><img class="account-avatar account-avatar-large" data-account-avatar alt=""><span data-account-name>Discord user</span></div>
+          <a href="idioma.html" class="account-action" role="menuitem"><span class="action-icon">A</span><span data-i18n="country">País</span></a>
+          <a href="https://discord.gg/CyNjKbeDVf" target="_blank" rel="noreferrer" class="account-action" role="menuitem"><span class="action-icon">?</span><span data-i18n="support">Soporte</span></a>
+          <button type="button" class="account-action account-logout" data-logout role="menuitem"><span class="action-icon">↪</span><span data-i18n="logout">Cerrar sesión</span></button>
+        </div>
+      </div>
+      <div class="language-picker">
+      <button class="language-toggle" type="button" aria-expanded="false" aria-controls="language-menu">
+        <span class="current-flag">🇲🇽</span>
+        <span class="current-language">ES</span>
+        <span class="chevron" aria-hidden="true">⌄</span>
+      </button>
+      <div class="language-menu" id="language-menu" role="menu"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-reference" id="about">
+      <div class="hero-reference-content">
+        <h1>Lylo</h1>
+        <p class="hero-reference-text" data-i18n="heroText">La forma más simple de hacer que tu comunidad se sienta viva, organizada y lista para crecer.</p>
+        <div class="hero-actions" id="invite">
+          <a class="button button-discord" href="https://discord.com/oauth2/authorize?client_id=1550251663259082784&amp;permissions=8&amp;integration_type=0&amp;scope=bot+applications.commands">
+            <img class="button-discord-icon" src="DISCORD.png" alt="Discord logo">
+            <span class="button-discord-label" data-i18n="inviteButton">Añadir bot</span>
+          </a>
+          <a class="button button-panel" href="gestion.html" data-i18n="manageServers" data-manage-servers hidden>Gestionar servidores</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="communities-section" id="communities">
+      <div class="section-heading community-heading">
+        <div><p class="eyebrow" data-i18n="communityEyebrow">Una comunidad que crece</p><h2 data-i18n="communityTitle">Comunidades que confían en nosotros</h2></div>
+        <p class="community-live"><span class="status-dot"></span><span data-i18n="communityLive">En vivo</span></p>
+      </div>
+      <div class="communities-viewport">
+        <div class="communities-grid" data-communities-grid>
+          <div class="community-empty" data-community-empty hidden><strong>404</strong><span data-i18n="communityEmpty">Todavía no hay comunidades para mostrar.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-section" id="features">
+      <div class="section-heading"><p class="eyebrow" data-i18n="featuresEyebrow">Todo en su sitio</p><h2 data-i18n="featuresTitle">Menos complicaciones. Más comunidad.</h2></div>
+      <div class="feature-grid">
+        <article class="feature-item"><span class="feature-number">01</span><h3 data-i18n="featureOneTitle">Moderación</h3><p data-i18n="featureOneText">Actúa rápido frente a mensajes, usuarios o situaciones que rompen el ambiente de tu servidor.</p></article>
+        <article class="feature-item"><span class="feature-number">02</span><h3 data-i18n="featureTwoTitle">AutoMod</h3><p data-i18n="featureTwoText">Detecta spam, enlaces peligrosos y palabras bloqueadas automáticamente, incluso cuando nadie está mirando.</p></article>
+        <article class="feature-item"><span class="feature-number">03</span><h3 data-i18n="featureThreeTitle">Tickets</h3><p data-i18n="featureThreeText">Crea un canal privado para soporte, reportes o solicitudes y atiende cada caso con orden.</p></article>
+        <article class="feature-item"><span class="feature-number">04</span><h3 data-i18n="featureFourTitle">Bienvenidas</h3><p data-i18n="featureFourText">Recibe a cada persona con un mensaje claro, roles automáticos y toda la información que necesita.</p></article>
+        <article class="feature-item"><span class="feature-number">05</span><h3 data-i18n="featureFiveTitle">Despedidas</h3><p data-i18n="featureFiveText">Mantén informado al servidor cuando alguien se vaya y conserva una comunidad que se siente cuidada.</p></article>
+        <article class="feature-item"><span class="feature-number">06</span><h3 data-i18n="featureSixTitle">Roles y comunidad</h3><p data-i18n="featureSixText">Organiza intereses, permisos y accesos para que cada miembro encuentre su lugar.</p></article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+     <div class="footer-links"><a href="terms.html" data-i18n="terms">Términos</a><a href="policy.html" data-i18n="policy">Política de privacidad</a><span>© 2026</span></div>
+  </footer>
+    <a class="premium-admin-corner" href="panel.html" aria-label="Premium administration"></a>
+  <script src="script.js"></script>
+</body>
+</html>
