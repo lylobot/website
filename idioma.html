@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selecciona el idioma de Lylo para tu servidor.">
+  <title data-i18n="titleLanguage">Lylo | Idioma del bot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="index.html" aria-label="Volver a la página principal" data-i18n-aria-label="backHomeAria"><span aria-hidden="true">←</span> <span data-i18n="back">Volver</span></a>
+    <div class="header-actions">
+      <div class="account-menu" data-account-menu>
+        <a class="login-button" href="/auth/login" data-login-link data-i18n="login">Iniciar sesión</a>
+        <button class="account-toggle" type="button" aria-expanded="false" aria-controls="account-dropdown" hidden><img class="account-avatar" data-account-avatar alt=""><span class="account-chevron">⌄</span></button>
+        <div class="account-dropdown" id="account-dropdown" role="menu" hidden>
+          <div class="account-summary"><img class="account-avatar account-avatar-large" data-account-avatar alt=""><span data-account-name>Discord user</span></div>
+          <a href="idioma.html" class="account-action" role="menuitem"><span class="action-icon">A</span><span data-i18n="country">País</span></a>
+          <a href="https://discord.gg/CyNjKbeDVf" target="_blank" rel="noreferrer" class="account-action" role="menuitem"><span class="action-icon">?</span><span data-i18n="support">Soporte</span></a>
+          <button type="button" class="account-action account-logout" data-logout role="menuitem"><span class="action-icon">↪</span><span data-i18n="logout">Cerrar sesión</span></button>
+        </div>
+      </div>
+      <div class="language-picker"><button class="language-toggle" type="button" aria-expanded="false" aria-controls="language-menu"><span class="current-flag">🇲🇽</span><span class="current-language">ES</span><span class="chevron">⌄</span></button><div class="language-menu" id="language-menu" role="menu"></div></div>
+    </div>
+  </header>
+  <main class="language-page" data-language-page hidden>
+    <section class="language-heading">
+      <p class="eyebrow">Lylo</p>
+      <h1 data-i18n="languageTitle">País e idioma del bot</h1>
+      <p data-i18n="languageIntro">Elige un idioma para los comandos, respuestas y paneles de Lylo en uno de tus servidores.</p>
+    </section>
+    <form class="language-form" data-language-form>
+      <div class="language-setup-layout">
+        <fieldset class="language-section">
+          <legend data-i18n="languageChoose">Seleccionar idioma</legend>
+          <div class="bot-language-options" role="radiogroup" aria-label="Idioma del bot" data-i18n-aria-label="botLanguageAria">
+            <label class="bot-language-option"><input type="radio" name="language" value="en"><span>🇺🇸</span><strong>English</strong></label>
+            <label class="bot-language-option"><input type="radio" name="language" value="fr"><span>🇫🇷</span><strong>Français</strong></label>
+            <label class="bot-language-option"><input type="radio" name="language" value="es" checked><span>🇲🇽</span><strong>Español</strong></label>
+            <label class="bot-language-option"><input type="radio" name="language" value="pt"><span>🇧🇷</span><strong>Português</strong></label>
+            <label class="bot-language-option"><input type="radio" name="language" value="id"><span>🇮🇩</span><strong>Indonesia</strong></label>
+            <label class="bot-language-option"><input type="radio" name="language" value="de"><span>🇩🇪</span><strong>Deutsch</strong></label>
+          </div>
+        </fieldset>
+        <section class="language-section">
+          <label for="language-server" data-i18n="languageServer">Seleccionar servidor</label>
+          <select id="language-server" name="guildId" required disabled>
+            <option value="" data-i18n="languageLoading">Cargando tus servidores...</option>
+          </select>
+          <p class="language-server-note" data-server-note data-i18n="languageServerNote">Solo aparecen servidores de los que eres propietario.</p>
+        </section>
+      </div>
+      <p class="language-reset-warning" data-i18n="languageResetWarning">Al cambiar el idioma se restablece toda la configuración del servidor: tickets, AutoMod, honeypot, bienvenidas, autorol y bloqueos.</p>
+      <button class="button button-primary language-submit" type="submit" data-language-submit disabled data-i18n="languageApply">Restablecer todo y aplicar idioma</button>
+      <p class="language-status" data-language-status aria-live="polite"></p>
+    </form>
+  </main>
+  <script src="script.js"></script>
+  <script src="idioma.js"></script>
+</body>
+</html>

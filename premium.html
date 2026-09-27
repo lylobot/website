@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Planes Premium de Lylo para llevar tu servidor más lejos.">
+  <title data-i18n="titlePremium">Lylo | Premium</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="index.html" aria-label="Volver a la página principal" data-i18n-aria-label="backHomeAria"><span aria-hidden="true">←</span> <span data-i18n="back">Volver</span></a>
+    <a class="brand premium-brand" href="index.html" aria-label="Lylo home">
+      <img class="brand-mark" src="BOTIMAGEN.png" alt="Lylo logo">
+      <span>Lylo</span>
+    </a>
+    <div class="header-actions">
+      <div class="account-menu" data-account-menu>
+        <a class="login-button" href="/auth/login" data-login-link data-i18n="login">Iniciar sesión</a>
+        <button class="account-toggle" type="button" aria-expanded="false" aria-controls="account-dropdown" hidden><img class="account-avatar" data-account-avatar alt=""><span class="account-chevron">⌄</span></button>
+        <div class="account-dropdown" id="account-dropdown" role="menu" hidden>
+          <div class="account-summary"><img class="account-avatar account-avatar-large" data-account-avatar alt=""><span data-account-name>Discord user</span></div>
+          <a href="idioma.html" class="account-action" role="menuitem"><span class="action-icon">A</span><span data-i18n="country">País</span></a>
+          <a href="https://discord.gg/CyNjKbeDVf" target="_blank" rel="noreferrer" class="account-action" role="menuitem"><span class="action-icon">?</span><span data-i18n="support">Soporte</span></a>
+          <button type="button" class="account-action account-logout" data-logout role="menuitem"><span class="action-icon">↪</span><span data-i18n="logout">Cerrar sesión</span></button>
+        </div>
+      </div>
+      <div class="language-picker"><button class="language-toggle" type="button" aria-expanded="false" aria-controls="language-menu"><span class="current-flag">🇲🇽</span><span class="current-language">ES</span><span class="chevron">⌄</span></button><div class="language-menu" id="language-menu" role="menu"></div></div>
+    </div>
+  </header>
+
+  <main class="premium-page">
+    <section class="premium-hero">
+      <p class="eyebrow" data-premium="eyebrow">Lylo Premium</p>
+      <h1 data-premium="title">Más posibilidades para tu comunidad.</h1>
+      <p data-premium="intro">Elige el plan que mejor encaje con tu servidor. Los beneficios están en camino.</p>
+    </section>
+    <section class="plans-grid" aria-label="Planes Premium" data-i18n-aria-label="premiumPlansAria">
+      <article class="plan-card">
+        <div class="plan-top"><span class="plan-label" data-premium="planOne">Plan 1</span><span class="plan-coming" data-premium="soon">Próximamente</span></div>
+        <h2><span>$4</span><small data-premium="month">/ mes</small></h2>
+        <p data-premium="planOneText">Una forma sencilla de darle un impulso a tu servidor.</p>
+        <ul><li data-premium="benefitOne">Funciones premium para tu comunidad</li><li data-premium="benefitTwo">Más opciones de configuración</li><li data-premium="benefitThree">Soporte para tu servidor</li></ul>
+        <a class="button button-panel plan-button" href="https://discord.gg/CyNjKbeDVf" target="_blank" rel="noreferrer" data-premium="buy">Comprar</a>
+      </article>
+      <article class="plan-card plan-featured">
+        <div class="plan-top"><span class="plan-label" data-premium="planTwo">Plan 2</span><span class="plan-coming" data-premium="bestValue">Mejor valor</span></div>
+        <h2><span>$10</span><small data-premium="year">/ año</small></h2>
+        <p data-premium="planTwoText">La experiencia completa para comunidades que quieren crecer.</p>
+        <ul><li data-premium="benefitFour">Todo lo incluido en el Plan 1</li><li data-premium="benefitFive">Beneficios exclusivos próximamente</li><li data-premium="benefitSix">Prioridad para nuevas funciones</li></ul>
+        <a class="button button-primary plan-button" href="https://discord.gg/CyNjKbeDVf" target="_blank" rel="noreferrer" data-premium="buy">Comprar</a>
+      </article>
+    </section>
+    <p class="premium-footnote" data-premium="footnote">Los planes todavía están en preparación. Te avisaremos cuando estén disponibles.</p>
+  </main>
+  <script src="script.js"></script>
+  <script src="premium.js"></script>
+</body>
+</html>

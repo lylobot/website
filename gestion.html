@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gestiona tus servidores de Discord con Lylo.">
+  <title data-i18n="titleManage">Lylo | Gestionar servidores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="back-home" href="index.html" aria-label="Volver a la página principal" data-i18n-aria-label="backHomeAria"><span aria-hidden="true">←</span> <span data-i18n="back">Volver</span></a>
+    <div class="header-actions">
+      <div class="account-menu" data-account-menu>
+        <a class="login-button" href="/auth/login" data-login-link data-i18n="login">Iniciar sesión</a>
+        <button class="account-toggle" type="button" aria-expanded="false" aria-controls="account-dropdown" hidden>
+          <img class="account-avatar" data-account-avatar alt="">
+          <span class="account-chevron">⌄</span>
+        </button>
+        <div class="account-dropdown" id="account-dropdown" role="menu" hidden>
+          <div class="account-summary"><img class="account-avatar account-avatar-large" data-account-avatar alt=""><span data-account-name>Discord user</span></div>
+          <a href="idioma.html" class="account-action" role="menuitem"><span class="action-icon">A</span><span data-i18n="country">País</span></a>
+          <a href="https://discord.gg/CyNjKbeDVf" target="_blank" rel="noreferrer" class="account-action" role="menuitem"><span class="action-icon">?</span><span data-i18n="support">Soporte</span></a>
+          <button type="button" class="account-action account-logout" data-logout role="menuitem"><span class="action-icon">↪</span><span data-i18n="logout">Cerrar sesión</span></button>
+        </div>
+      </div>
+      <div class="language-picker">
+        <button class="language-toggle" type="button" aria-expanded="false" aria-controls="language-menu"><span class="current-flag">🇲🇽</span><span class="current-language">ES</span><span class="chevron">⌄</span></button>
+        <div class="language-menu" id="language-menu" role="menu"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="manage-page">
+    <div class="manage-heading">
+      <h1 data-i18n="manageTitle">Selecciona un servidor</h1>
+      <p data-i18n="manageText">Elige un servidor para configurar Lylo</p>
+    </div>
+    <label class="server-search"><span aria-hidden="true">⌕</span><input type="search" data-server-search data-i18n-placeholder="manageSearch" placeholder="Buscar servidores"></label>
+    <div class="server-list" data-server-list><div class="server-state" data-server-state data-i18n="manageLoading">Cargando servidores...</div></div>
+  </main>
+  <script src="script.js"></script>
+  <script src="gestion.js"></script>
+</body>
+</html>
